@@ -1,0 +1,21 @@
+project_id = "inaiyam-matrimony"
+
+[auth]
+site_url = "http://127.0.0.1:5173"
+additional_redirect_urls = ["http://localhost:5173"]
+enable_signup = true
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false
+
+[api]
+enabled = true
+schemas = ["public", "graphql_public", "app"]
+
+[db]
+major_version = 15
+
+[functions.review-photo]
+verify_jwt = true
